@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartilhas Interativas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            color: #666;
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+        
+        .cartilhas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            word-break: break-word;
+        }
+        
+        .card p {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        
+        .card .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        
+        .card .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .cartilhas {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Cartilhas Interativas</h1>
+        <p class="subtitle">Acesse as cartilhas sobre segurança digital e educação</p>
+        
+        <div class="cartilhas">
+            <a href="aventuras-pedrinho-nina%20(final.revisado).html" class="card">
+                <h2>🎭 Aventuras de Pedrinho e Nina</h2>
+                <p>Uma cartilha interativa com histórias educativas para crianças</p>
+                <span class="btn">Abrir</span>
+            </a>
+            
+            <a href="cartilha_interativa_engenharia_social.html" class="card">
+                <h2>🔐 Engenharia Social</h2>
+                <p>Aprenda sobre segurança e técnicas de engenharia social</p>
+                <span class="btn">Abrir</span>
+            </a>
+            
+            <a href="cartilha-internet-segura_CGJ%20-%20Copia.html" class="card">
+                <h2>🌐 Internet Segura</h2>
+                <p>Guia completo para navegação segura na internet</p>
+                <span class="btn">Abrir</span>
+            </a>
+            
+            <a href="cartilha_vers%C3%A3o%20revisada_15.10.2025%201.html" class="card">
+                <h2>📖 Cartilha Revisada</h2>
+                <p>Versão atualizada e revisada da cartilha principal</p>
+                <span class="btn">Abrir</span>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Cartilhas Interativas - Educação em Segurança Digital</p>
+        </div>
+    </div>
+</body>
+</html>
